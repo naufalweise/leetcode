@@ -4,8 +4,7 @@
 [![Languages](https://img.shields.io/badge/Languages-Java%20|%20JS%20|%20TS%20|%20Go%20|%20Python-blue)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A curated collection of my solutions to LeetCode algorithmic and data structure problems. This repository serves as a portfolio of my problem-solving skills, algorithmic thinking, and polyglot proficiency across multiple programming languages. Most of the code are written by myself with minimal help from AI in order to improve my coding skills.
-
+A curated collection of my solutions to LeetCode algorithmic and data structure problems. This repository serves as a portfolio of my problem-solving skills, algorithmic thinking, and polyglot proficiency across multiple programming languages. Most of the code are written by myself with minimal help from AI in order to improve my coding skills. This project is also part of research to compare the pros and cons of various programming languages relative to one another.
 ---
 
 ## 🛠️ Tech Stack & Languages

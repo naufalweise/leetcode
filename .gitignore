@@ -1,0 +1,7 @@
+# Compiled files
+a.out
+*.exe
+*.out
+*.o
+*.obj
+*.class
