@@ -8,18 +8,17 @@ impl Solution {
        });
 
            
-       let results: Vec<Vec<i32>> = num_to_indices.keys().fold(Vec::new(), |mut acc, val| {
+       let result= num_to_indices.iter().find_map(|(val, val_indices)| {
             let diff = target - val;
-            let val_indices = num_to_indices.get(val).unwrap();
             if diff == *val {
                 if val_indices.len() >= 2 {
-                    acc.push(vec![val_indices[0], val_indices[1]]);
-                };  
-            } else if let Some(diff_indices) = num_to_indices.get(&diff) {
-                acc.push(vec![diff_indices[0], val_indices[0]]); 
+                    return Some(vec![val_indices[0], val_indices[1]])
+                } else {
+                    return None;
+                }
             }
-            acc
+            num_to_indices.get(&diff).map(|diff_indices| vec![diff_indices[0], val_indices[1]])
        });
-       results.into_iter().next().unwrap_or_default()
+       result.unwrap_or_default()
     }
 }
